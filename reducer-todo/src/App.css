@@ -1,38 +1,54 @@
+* {
+  font-family: 'Mountains of Christmas', cursive;
+}
+
 .App {
   text-align: center;
+  background-image: url('https://image.freepik.com/free-vector/christmas-background-with-bokeh-snowflakes_1393-207.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  font-size: 2.5rem;
+  background-color: rgba(199, 13, 13, 0.671);
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list {
+  width: 500px;
+  margin: 30px auto;
+  padding: 2px;
+  background-image: url('https://image.shutterstock.com/image-vector/christmas-pattern-classic-red-white-260nw-1191650494.jpg');
+  border: solid 3px black;
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* background-color: grey; */
+  margin-bottom: 1%;
+}
+
+.form input {
+  height: 29px;
+  border: solid 2px black;
+  font-size: 1.5rem;
+}
+
+.form button {
+  width: 300px;
+  background-color: rgb(29, 126, 29);
   color: white;
+  margin: 10px 0 5px 90px;
 }
-
-.App-link {
-  color: #61dafb;
+.todo {
+  background-color: rgba(255, 255, 0, 0.767);
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo.completed {
+  text-decoration: line-through;
 }
